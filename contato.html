@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="conteudo">
+        <section class="linha">
+            <img src="./images/logo.png" alt="Logo da empresa XPTO" width="200px">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html" class="botao botao-destaque">Início</a>
+                    </li>
+                    <li>
+                        <a href="./contato.html" class="botao botao-destaque">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="conteudo">
+        <section class="sobre linha">
+            <article>
+                <h1>Formulário de contato</h1>
+                <h2>Landing Page</h2>
+                <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe incidunt eveniet totam nihil sequi tempore deserunt atque deleniti, suscipit eligendi perspiciatis porro architecto id nesciunt? Iste pariatur omnis sint nam?</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nisi dolore beatae nesciunt molestias? Placeat facere illo eum quae nesciunt, non rem soluta eligendi, fugit iusto saepe doloribus corrupti eius!</p><br>
+            </article>
+            <article class="agrupamento">
+                <fieldset>
+                    <legend>
+                        <h5>Dados de contato</h5>
+                    </legend>
+                    <form id="frmInscricao" action="contato.php" method="POST">
+                        <label class="rotulo" for="nome">Nome:</label><br>
+                        <input class="entrada" type="text" name="nome" id="txtNome" required maxlength="100" size="50"><br><br>
+
+                        <label class="rotulo" for="nascimento">Data de Nascimento:</label><br>
+                        <input class="entrada" type="date" id="txtNascimento" required><br><br>
+
+                        <label class="rotulo" for="sexo">Sexo:</label><br>
+                        <label class="rotulo">
+                            <input class="entrada" type="radio" name="rdoSexo" value="M" id="txtSexo" required>
+                            Masculino</label>
+                        <label class="rotulo">
+                            <input class="entrada" type="radio" name="rdoSexo" value="F" id="txtSexo" required>
+                            Feminino</label><br><br>
+
+                        <label class="rotulo" for="Endereço">Endereço:</label><br>
+                        <input class="entrada" type="text" id="txtEndereco" required maxlength="100" size="50"><br><br>
+
+                        <label class="rotulo" for="Estado">Estado:</label><br>
+                        <select class="entrada" name="Estado" id="cbxEstado" required>
+                            <option value=""></option>
+                            <option value="1">SP</option>
+                            <option value="2">PR</option>
+                            <option value="3">SC</option>
+                            <option value="4">RS</option>
+                        </select><br><br>
+
+                        <label class="rotulo" for="Cidade">Cidade:</label><br>
+                        <select class="entrada" name="Cidade" id="cbxCidade" required>
+                            <option value=""></option>
+                            <option value="1">São Paulo</option>
+                            <option value="2">Curitiba</option>
+                            <option value="3">Florianópolis</option>
+                            <option value="4">Porto Alegre</option>
+                        </select><br><br>
+
+                        <label class="rotulo" for="Celular">Celular:</label><br>
+                        <input class="entrada" type="tel" id="txtCelular" required size="50" placeholder="(##) #####-####"
+                            maxlength="15"><br><br>
+
+                        <label class="rotulo" for="E-mail">E-mail:</label><br>
+                        <input class="entrada" type="email" id="txtE-mail" required size="50"><br><br>
+
+                        <!-- <label class="rotulo" for="AreasInteresse">Áreas de Interesse:</label><br>
+                        <label class="rotulo">
+                            <input class="entrada" type="checkbox" value="HTML" name="chkAreasInteresse" id="txtAreasInteresse">
+                            HTML</label>
+                        <label class="rotulo">
+                            <input class="entrada" type="checkbox" value="CSS" name="chkAreasInteresse" id="txtAreasInteresse">
+                            CSS</label>
+                        <label class="rotulo">
+                            <input class="entrada" type="checkbox" value="JavaScript" name="chkAreasInteresse" id="txtAreasInteresse">
+                            JavaScript</label><br><br> -->
+
+                        <label class="rotulo" for="Mensagem">Mensagem:</label><br><br>
+                        <textarea class="entrada" name="Mensagem" id="txtMensagem" cols="50" rows="5" required></textarea><br><br>
+
+                        <input class="entrada" type="submit" id="btnEnviar" value="Enviar">
+                    </form>
+                </fieldset>
+            </article>
+        </section>
+    </main>
+    <footer class="conteudo">
+        <ul class="linha">
+            <li>
+                <a href="#">
+                    <img src="./images/logo-insta.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/logo-twitter.png" alt="Twitter">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/logo-facebook.png" alt="Facebook">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
